@@ -10,7 +10,7 @@ const msalConfig = {
     auth: {
       // clientId: process.env.APP_CLIENT_ID
       // redirectUri: process.env.REDIRECT_URI
-      clientId: "016a8818-682f-4ddc-b503-a85bc5f3df7b", // This is the ONLY mandatory field; everything else is optional.
+      clientId: "e3032ddf-24ec-44ac-8538-0f85093f75ec", // This is the ONLY mandatory field; everything else is optional.
       authority: b2cPolicies.authorities.signUpSignIn.authority, // Choose sign-up/sign-in user-flow as your default.
       knownAuthorities: [b2cPolicies.authorityDomain], // You must identify your tenant's domain as a known authority.
       redirectUri: "https://azure-ad-b2c-client-app.azurewebsites.net", // You must register this URI on Azure Portal/App Registration. Defaults to "window.location.href".
