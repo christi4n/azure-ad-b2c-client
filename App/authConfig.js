@@ -8,10 +8,12 @@
 
 const msalConfig = {
     auth: {
-      clientId: "0cff2c7d-91c2-4a66-8392-e25cc4feeca1", // This is the ONLY mandatory field; everything else is optional.
+      // clientId: process.env.APP_CLIENT_ID
+      // redirectUri: process.env.REDIRECT_URI
+      clientId: "d487ac83-4f48-4968-922e-f3accf8c8f14", // This is the ONLY mandatory field; everything else is optional.
       authority: b2cPolicies.authorities.signUpSignIn.authority, // Choose sign-up/sign-in user-flow as your default.
       knownAuthorities: [b2cPolicies.authorityDomain], // You must identify your tenant's domain as a known authority.
-      redirectUri: "http://localhost:6420", // You must register this URI on Azure Portal/App Registration. Defaults to "window.location.href".
+      redirectUri: "https://azure-ad-b2c-client-app.azurewebsites.net", // You must register this URI on Azure Portal/App Registration. Defaults to "window.location.href".
     },
     cache: {
       cacheLocation: "sessionStorage", // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
