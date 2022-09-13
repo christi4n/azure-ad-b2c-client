@@ -9,6 +9,7 @@ const b2cPolicies = {
         editProfile: "B2C_1_profileediting"
     },
     authorities: {
+        // Define the default policy for signup/signin
         signUpSignIn: {
             authority: "https://mydevfactorynet.b2clogin.com/mydevfactorynet.onmicrosoft.com/B2C_1_signinsignup_reset",
         },
