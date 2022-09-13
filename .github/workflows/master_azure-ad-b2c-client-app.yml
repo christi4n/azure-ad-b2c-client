@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'azure-ad-b2c-client-app'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F0263547E2E94D2C9DD47A3405437F7C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E5BB5CE9390746BC96D4F9E7F921C8C3 }}
           package: .
