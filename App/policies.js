@@ -14,7 +14,7 @@ const b2cPolicies = {
             authority: "https://mydevfactorynet.b2clogin.com/mydevfactorynet.onmicrosoft.com/B2C_1_signupsignin",
         },
         editProfile: {
-            authority: "https://mydevfactorynet.b2clogin.com/mydevfactorynet.onmicrosoft.com/profileediting"
+            authority: "https://mydevfactorynet.b2clogin.com/mydevfactorynet.onmicrosoft.com/B2C_1_profileediting"
         }
     },
     authorityDomain: "mydevfactorynet.b2clogin.com"
