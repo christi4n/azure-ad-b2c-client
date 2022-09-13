@@ -111,3 +111,4 @@ package-lock.json
 
 # Misc
 README.ori*
+.DS_Store

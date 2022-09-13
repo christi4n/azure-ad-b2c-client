@@ -13,6 +13,7 @@ description: "This sample demonstrates a vanilla JavaScript single-page applicat
 # JavaScript single-page application secured with MSAL.js using the Authorization Code Flow (PKCE) on Azure AD B2C
 
  1. [Overview](#overview)
+ 1. [Demo](#demo)
  1. [Scenario](#scenario)
  1. [Contents](#contents)
  1. [Prerequisites](#prerequisites)
@@ -29,13 +30,40 @@ description: "This sample demonstrates a vanilla JavaScript single-page applicat
 
 This sample demonstrates a vanilla JavaScript single-page application (SPA) that lets users authenticate against [Azure Active Directory B2C](https://azure.microsoft.com/services/active-directory/external-identities/b2c/) (Azure AD B2C) using the [Microsoft Authentication Library for JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js) (MSAL.js) and authorize them to call a web API that is also protected by **Azure AD B2C**. This sample also demonstrates sign-up/sign-in, password reset and profile edit [user-flows](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
 
+## Demo
+
+This is a preview of what the app tries to implement.
+
+Not logged-in yet:
+
+![Not logged-in yet](./assets/images/azure-ad-b2c-home-not-loggedin.png)
+
+Registration form:
+
+![Registration form](./assets/images/azure-ad-b2c-loginbox.png)
+
+User logged-in:
+
+![User logged-in](./assets/images/azure-ad-b2c-loggedin.png)
+
+The demo is also accessible on my [personal Azure account](https://azure-ad-b2c-client-app.azurewebsites.net/).
+Here is the process:
+- visit the project page
+- register or login to your account. If you are not yet registered, you should verify first your email address. For the sake of simplicity, external identity providers are not part of this demo but it may change in the future
+- fill the code you received by email
+- fill the other fields
+- submit the form
+- you're in!
+
+Please, note that I also host the api part in Azure. You can have a look at [my other repository](https://github.com/christi4n/azure-ad-b2c-webapi).
+
 ## Scenario
 
 1. The client application uses the **MSAL.js** to obtain an **Access Token** from **Azure AD B2C**.
 1. The **Access Token** is used as a **bearer** to *authorize* the user to call a protected web API.
 1. The protected web API responds with the name of the signed-in user.
 
-![Overview](./ReadmeFiles/topology.png)
+![Overview](./assets/images/topology.png)
 
 If you like, you can take a [quick look at the application](https://azure-samples.github.io/ms-identity-b2c-javascript-spa/) before trying.
 
@@ -155,7 +183,7 @@ Open the `App\apiConfig.js` file. Then:
 1. Open your browser and navigate to `http://localhost:6420`.
 1. Click on the **sign-in** button on the top right corner.
 
-![Screenshot](./ReadmeFiles/screenshot.png)
+![Screenshot](./assets/images/screenshot.png)
 
 > :thought_balloon: How did we do? Consider taking a moment to [share your experience with us](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR73pcsbpbxNJuZCMKN0lURpUMlZNRk1CUlk4NU5YTVNNWVpBMUYwRlBGMiQlQCN0PWcu)
 
@@ -204,7 +232,7 @@ Build your project to get a distributable files folder, where your built `html`,
 
 Now you need to navigate to the Azure App Service Portal, and locate your web API there. Once you do, click on the **CORS** blade. There, add your deployed SPA's coordinates as an allowed domain:
 
-![Screenshot](./ReadmeFiles/enable_cors.png)
+![Screenshot](./assets/images/enable_cors.png)
 
 ## More information
 
