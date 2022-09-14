@@ -3,7 +3,7 @@
  * To learn more about user flows, visit: https://docs.microsoft.com/en-us/azure/active-directory-b2c/user-flow-overview
  * To learn more about custom policies, visit: https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview
  */
-/* const b2cPolicies = {
+const b2cPolicies = {
     names: {
         signUpSignIn: "B2C_1_signupsignin",
         editProfile: "B2C_1_profileediting"
@@ -18,12 +18,12 @@
         }
     },
     authorityDomain: "mydevfactorynet.b2clogin.com"
-} */
+}
 
 /**
  * We are using here the IEF framework for custom policies.
  */
- const b2cPolicies = {
+ /* const b2cPolicies = {
     names: {
         signUpSignIn: "B2C_1A_signup_signin",
         editProfile: "B2C_1A_ProfileEdit",
@@ -42,4 +42,4 @@
         }
     },
     authorityDomain: "mydevfactorynet.b2clogin.com"
-}
+} */
